@@ -1,0 +1,14 @@
+name: Bot WhatsApp
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+
+jobs:
+  send-message:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Enviar mensagem
+        run: |
+          curl "https://api.callmebot.com/whatsapp.php?phone=5521992890991&text=🔥OFERTA%0Ahttps://meli.la/xxxxx&apikey=9305706"
